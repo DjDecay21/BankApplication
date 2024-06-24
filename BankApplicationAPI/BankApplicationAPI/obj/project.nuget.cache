@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "knJRk0KXAes=",
+  "dgSpecHash": "BB+N4pEHKnY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mrych\\Documents\\GitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\BankApplicationAPI.csproj",
+  "projectFilePath": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\BankApplicationAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mrych\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\mrych\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
