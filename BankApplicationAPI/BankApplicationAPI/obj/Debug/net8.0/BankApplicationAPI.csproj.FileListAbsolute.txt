@@ -271,3 +271,4 @@ C:\Users\mrych\OneDrive\Pulpit\ProjektyGitHub\BankApplication\BankApplicationAPI
 C:\Users\mrych\OneDrive\Pulpit\ProjektyGitHub\BankApplication\BankApplicationAPI\BankApplicationAPI\obj\Debug\net8.0\BankApplicationAPI.pdb
 C:\Users\mrych\OneDrive\Pulpit\ProjektyGitHub\BankApplication\BankApplicationAPI\BankApplicationAPI\obj\Debug\net8.0\BankApplicationAPI.genruntimeconfig.cache
 C:\Users\mrych\OneDrive\Pulpit\ProjektyGitHub\BankApplication\BankApplicationAPI\BankApplicationAPI\obj\Debug\net8.0\ref\BankApplicationAPI.dll
+C:\Users\mrych\OneDrive\Pulpit\ProjektyGitHub\BankApplication\BankApplicationAPI\BankApplicationAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
