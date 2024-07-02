@@ -34,7 +34,7 @@ namespace BankApplicationAPI.Controllers
                 _accountService.RegisterUser(dto);
                 return Ok();
             }
-            catch (BadRequestExeption ex)
+            catch (BadRequestException ex)
             {
 
                 return BadRequest(new { message = ex.Message });
@@ -47,15 +47,15 @@ namespace BankApplicationAPI.Controllers
             try
             {
                 string token = _accountService.Login(dto);
-                return Ok(new { token }); // Zwrot tokenu w obiekcie JSON
+                return Ok(new { token });
             }
             catch (BadLoginExeption ex)
             {
                 return BadRequest(new { message = ex.Message });
             }
-            catch (Exception ex) // Ogólna obsługa wyjątków
+            catch (Exception ex)
             {
-                // Logowanie wyjątku, można dodać mechanizm logowania (np. NLog, Serilog)
+                
                 return StatusCode(500, new { message = "An unexpected error occurred.", details = ex.Message });
             }
         }
