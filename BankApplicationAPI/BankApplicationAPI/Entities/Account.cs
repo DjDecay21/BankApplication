@@ -9,7 +9,7 @@ namespace BankApplicationAPI.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public string AccountNumber { get; set; }
         public int UserId { get; set; }
-        public double Balance { get; set; }
+        public decimal Balance { get; set; }
 
         //Navi
         public User User { get; set; }

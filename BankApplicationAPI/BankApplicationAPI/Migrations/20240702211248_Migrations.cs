@@ -35,7 +35,7 @@ namespace BankApplicationAPI.Migrations
                 {
                     AccountNumber = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: false),
-                    Balance = table.Column<double>(type: "float", nullable: false)
+                    Balance = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {

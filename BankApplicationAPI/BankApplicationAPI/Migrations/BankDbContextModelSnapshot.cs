@@ -27,8 +27,8 @@ namespace BankApplicationAPI.Migrations
                     b.Property<string>("AccountNumber")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<double>("Balance")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Balance")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");

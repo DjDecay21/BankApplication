@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BankApplicationAPI.Migrations
 {
     [DbContext(typeof(BankDbContext))]
-    [Migration("20240624190244_Migrations")]
+    [Migration("20240702211248_Migrations")]
     partial class Migrations
     {
         /// <inheritdoc />
@@ -30,8 +30,8 @@ namespace BankApplicationAPI.Migrations
                     b.Property<string>("AccountNumber")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<double>("Balance")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Balance")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("UserId")
                         .HasColumnType("int");

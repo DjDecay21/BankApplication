@@ -35,12 +35,12 @@ namespace BankApplicationAPI.Services
             var user = _bankDbContext.Users.FirstOrDefault(u => u.Email == dto.Email);
             if (user == null)
             {
-                throw new BadLoginExeption("Invalid email or password1");
+                throw new BadLoginException("Invalid email or password1");
             }
             var result = _passwordHasher.VerifyHashedPassword(user, user.PasswordHash, dto.Password);
             if (result == PasswordVerificationResult.Failed)
             {
-                throw new BadLoginExeption("Invalid email or password2");
+                throw new BadLoginException("Invalid email or password2");
             }
             var claims = new List<Claim>()
             {
