@@ -32,6 +32,7 @@ namespace BankApplicationAPI.Services
         public string Login(LoginUserDto dto)
         {
             dto.Email = dto.Email.ToLower();
+            
             var user = _bankDbContext.Users.FirstOrDefault(u => u.Email == dto.Email);
             if (user == null)
             {
@@ -89,7 +90,7 @@ namespace BankApplicationAPI.Services
             _bankDbContext.Add(newUser);
             _bankDbContext.SaveChanges();
         }
-
+        
         private void ValidateUserRegistration(RegisterUserDto dto)
         {
             if (string.IsNullOrWhiteSpace(dto.FirstName) ||
@@ -106,6 +107,11 @@ namespace BankApplicationAPI.Services
                 throw new BadRequestException("Incorrect email.");
             }
 
+            var doubleUser = _bankDbContext.Users.FirstOrDefault(u=>u.Email == dto.Email);
+            if (doubleUser != null)
+            {
+                throw new BadRequestException("There is an account with the given email address ");
+            }
             if (dto.PasswordHash != dto.RepeatPasswordHash)
             {
                 throw new BadRequestException("The passwords are different.");

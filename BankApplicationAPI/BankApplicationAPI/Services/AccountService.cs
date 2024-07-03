@@ -58,5 +58,12 @@ namespace BankApplicationAPI.Services
             return sb.ToString();
         }
 
+        //public List<Account> ShowAllAccount(int id)
+        //{
+        //    var accounts = _dbContext.Accounts.Where(a => a.UserId == id).ToList();
+
+        //    return accounts;
+        //}
+
     }
 }
