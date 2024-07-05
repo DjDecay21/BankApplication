@@ -31,14 +31,33 @@ namespace BankApplicationAPI.Controllers
                 return BadRequest(new { message = ex.Message });
             }
         }
-        //[HttpGet("showAccounts/")]
-        //public ActionResult<AccountDto> Get([FromRoute] int id)
-        //{
-        //    try
-        //    {
-        //        _accountService.
-        //    }
-        //    return Ok();
-        //}
+        [HttpGet("showAccounts/{id}")]
+        public ActionResult<List<AccountDto>> Get([FromRoute] int id)
+        {
+            try
+            {
+                var accounts = _accountService.GetAccountsByUserId(id);
+
+                if (accounts == null || accounts.Count == 0)
+                {
+                    return NotFound(new { message = $"The user is not found with {id} id." });
+                }
+
+                // Mapowanie Account na AccountDto jeśli jest taka potrzeba
+                var accountDtos = accounts.Select(a => new AccountDto
+                {
+                    AccountNumber = a.AccountNumber,
+                    Balance = a.Balance
+                    // Dodaj inne właściwości, jeśli są w AccountDto
+                }).ToList();
+
+                return Ok(accountDtos);
+            }
+            catch (NotFoundAccount ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
+
+    }
 }

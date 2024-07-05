@@ -7,16 +7,28 @@
       "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\exeptions\\notfoundaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\exeptions\\notfoundaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\exeptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\exeptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\exeptions\\badloginexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\exeptions\\badloginexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\entities\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,20 +39,12 @@
       "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\exeptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\exeptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\entities\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\entities\\accountdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\entities\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\entities\\registeruserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\exeptions\\badloginexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|solutionrelative:bankapplicationapi\\exeptions\\badloginexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA9AD32A-8597-475B-8D83-077A2784AC8A}|BankApplicationAPI\\BankApplicationAPI.csproj|c:\\users\\mrych\\onedrive\\pulpit\\projektygithub\\bankapplication\\bankapplicationapi\\bankapplicationapi\\entities\\bankdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -93,11 +97,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
@@ -107,7 +115,7 @@
               "RelativeDocumentMoniker": "BankApplicationAPI\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Controllers\\AccountController.cs",
               "RelativeToolTip": "BankApplicationAPI\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwCkAAAALAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAIwCoAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-02T20:04:06.613Z",
               "EditorCaption": ""
@@ -115,6 +123,70 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "BankApplicationAPI\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Services\\AccountService.cs",
+              "RelativeToolTip": "BankApplicationAPI\\Services\\AccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T20:20:56.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NotFoundAccounts.cs",
+              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Exeptions\\NotFoundAccounts.cs",
+              "RelativeDocumentMoniker": "BankApplicationAPI\\Exeptions\\NotFoundAccounts.cs",
+              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Exeptions\\NotFoundAccounts.cs",
+              "RelativeToolTip": "BankApplicationAPI\\Exeptions\\NotFoundAccounts.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T18:53:45.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BadRequestException.cs",
+              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Exeptions\\BadRequestException.cs",
+              "RelativeDocumentMoniker": "BankApplicationAPI\\Exeptions\\BadRequestException.cs",
+              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Exeptions\\BadRequestException.cs",
+              "RelativeToolTip": "BankApplicationAPI\\Exeptions\\BadRequestException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T19:24:23.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "BankApplicationAPI\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Services\\UserService.cs",
+              "RelativeToolTip": "BankApplicationAPI\\Services\\UserService.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowG4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T17:42:05.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Entities\\Account.cs",
+              "RelativeDocumentMoniker": "BankApplicationAPI\\Entities\\Account.cs",
+              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Entities\\Account.cs",
+              "RelativeToolTip": "BankApplicationAPI\\Entities\\Account.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAoAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-13T12:34:08.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "BankApplicationAPI\\Controllers\\UserController.cs",
@@ -127,19 +199,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Program.cs",
-              "RelativeDocumentMoniker": "BankApplicationAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Program.cs",
-              "RelativeToolTip": "BankApplicationAPI\\Program.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAEgAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "BadLoginException.cs",
+              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Exeptions\\BadLoginException.cs",
+              "RelativeDocumentMoniker": "BankApplicationAPI\\Exeptions\\BadLoginException.cs",
+              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Exeptions\\BadLoginException.cs",
+              "RelativeToolTip": "BankApplicationAPI\\Exeptions\\BadLoginException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T17:37:35.862Z"
+              "WhenOpened": "2024-06-26T18:55:51.209Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "RegisterUserDto.cs",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Entities\\RegisterUserDto.cs",
               "RelativeDocumentMoniker": "BankApplicationAPI\\Entities\\RegisterUserDto.cs",
@@ -151,62 +224,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BadRequestException.cs",
-              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Exeptions\\BadRequestException.cs",
-              "RelativeDocumentMoniker": "BankApplicationAPI\\Exeptions\\BadRequestException.cs",
-              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Exeptions\\BadRequestException.cs",
-              "RelativeToolTip": "BankApplicationAPI\\Exeptions\\BadRequestException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Program.cs",
+              "RelativeDocumentMoniker": "BankApplicationAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Program.cs",
+              "RelativeToolTip": "BankApplicationAPI\\Program.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAEgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T19:24:23.766Z"
+              "WhenOpened": "2024-06-24T17:37:35.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Services\\AccountService.cs",
-              "RelativeDocumentMoniker": "BankApplicationAPI\\Services\\AccountService.cs",
-              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Services\\AccountService.cs",
-              "RelativeToolTip": "BankApplicationAPI\\Services\\AccountService.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwEEAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T20:20:56.751Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "BankApplicationAPI\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Services\\UserService.cs",
-              "RelativeToolTip": "BankApplicationAPI\\Services\\UserService.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAwwG4AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T17:42:05.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Entities\\Account.cs",
-              "RelativeDocumentMoniker": "BankApplicationAPI\\Entities\\Account.cs",
-              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Entities\\Account.cs",
-              "RelativeToolTip": "BankApplicationAPI\\Entities\\Account.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAoAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-13T12:34:08.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "AccountDto.cs",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Entities\\AccountDto.cs",
               "RelativeDocumentMoniker": "BankApplicationAPI\\Entities\\AccountDto.cs",
@@ -218,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "BankDbContext.cs",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Entities\\BankDbContext.cs",
               "RelativeDocumentMoniker": "BankApplicationAPI\\Entities\\BankDbContext.cs",
@@ -230,19 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "BadLoginException.cs",
-              "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Exeptions\\BadLoginException.cs",
-              "RelativeDocumentMoniker": "BankApplicationAPI\\Exeptions\\BadLoginException.cs",
-              "ToolTip": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Exeptions\\BadLoginException.cs",
-              "RelativeToolTip": "BankApplicationAPI\\Exeptions\\BadLoginException.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T18:55:51.209Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "AuthenticationSettings.cs",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\AuthenticationSettings.cs",
               "RelativeDocumentMoniker": "BankApplicationAPI\\AuthenticationSettings.cs",
@@ -254,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\appsettings.json",
               "RelativeDocumentMoniker": "BankApplicationAPI\\appsettings.json",
@@ -266,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "LoginUserDto.cs",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Entities\\LoginUserDto.cs",
               "RelativeDocumentMoniker": "BankApplicationAPI\\Entities\\LoginUserDto.cs",
@@ -278,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Entities\\User.cs",
               "RelativeDocumentMoniker": "BankApplicationAPI\\Entities\\User.cs",
@@ -290,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Transfer.cs",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Entities\\Transfer.cs",
               "RelativeDocumentMoniker": "BankApplicationAPI\\Entities\\Transfer.cs",
@@ -302,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "BankApplicationAPI\\Properties\\launchSettings.json",
@@ -314,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "BankApplicationAPI.csproj",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\BankApplicationAPI.csproj",
               "RelativeDocumentMoniker": "BankApplicationAPI\\BankApplicationAPI.csproj",
@@ -326,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Payment.cs",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Entities\\Payment.cs",
               "RelativeDocumentMoniker": "BankApplicationAPI\\Entities\\Payment.cs",
@@ -338,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "20240613133735_Init.cs",
               "DocumentMoniker": "C:\\Users\\mrych\\Documents\\GitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Migrations\\20240613133735_Init.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Documents\\GitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\Migrations\\20240613133735_Init.cs",
@@ -349,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "BankApplicationAPI",
               "DocumentMoniker": "C:\\Users\\mrych\\OneDrive\\Pulpit\\ProjektyGitHub\\BankApplication\\BankApplicationAPI\\BankApplicationAPI\\BankApplicationAPI.csproj",
               "RelativeDocumentMoniker": "BankApplicationAPI\\BankApplicationAPI.csproj",

@@ -10,12 +10,14 @@ namespace BankApplicationAPI.Services
     {
         //Added veryfication JWT
         void CreateAccount(int id);
+        List<Account> GetAccountsByUserId(int id);
     }
     public class AccountService : IAccountService
     {
         
         private readonly IAccountService _accountService;
         private readonly BankDbContext _dbContext;
+        
 
         public AccountService(BankDbContext dbContext)
         {
@@ -58,12 +60,27 @@ namespace BankApplicationAPI.Services
             return sb.ToString();
         }
 
-        //public List<Account> ShowAllAccount(int id)
-        //{
-        //    var accounts = _dbContext.Accounts.Where(a => a.UserId == id).ToList();
+        public List<Account> GetAccountsByUserId(int userId)
+        {
+            // Pobranie wszystkich kont przypisanych do określonego userId
+            var accounts = _dbContext.Accounts
+                                     .Where(a => a.UserId == userId)
+                                     .Select(account => new Account
+                                     {
+                                         AccountNumber = account.AccountNumber,
+                                         Balance = account.Balance
+                                     })
+                                     .ToList();
 
-        //    return accounts;
-        //}
+            // Logowanie lub inna akcja w przypadku pustej listy
+            if (accounts.Count == 0)
+            {
+                Console.WriteLine($"Nie znaleziono kont dla użytkownika o ID: {userId}");
+            }
+
+            return accounts;
+        }
+
 
     }
 }
