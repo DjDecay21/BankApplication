@@ -3,6 +3,7 @@ using BankApplicationAPI.Exeptions;
 using BankApplicationAPI.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 
 namespace BankApplicationAPI.Controllers
 {
@@ -21,41 +22,56 @@ namespace BankApplicationAPI.Controllers
         [HttpPost("createAccount/{id}")]
         public ActionResult<Account> CreateAccount(int id)
         {
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
             try
             {
-                _accountService.CreateAccount(id);
-                return Ok();
+                try
+                {
+                    _accountService.CreateAccount(id, token);
+                    return Ok();
+                }
+                catch (BadRequestException ex)
+                {
+                    return BadRequest(new { message = ex.Message });
+                }
             }
-            catch (BadRequestException ex)
+            catch(BadTokenException ex)
             {
                 return BadRequest(new { message = ex.Message });
             }
+            
         }
         [HttpGet("showAccounts/{id}")]
         public ActionResult<List<AccountDto>> Get([FromRoute] int id)
         {
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
             try
             {
-                var accounts = _accountService.GetAccountsByUserId(id);
-
-                if (accounts == null || accounts.Count == 0)
+                try
                 {
-                    return NotFound(new { message = $"The user is not found with {id} id." });
+                    var accounts = _accountService.GetAccountsByUserId(id, token);
+
+                    if (accounts == null || accounts.Count == 0)
+                    {
+                        return NotFound(new { message = $"The user is not found with {id} id." });
+                    }
+
+                    var accountDtos = accounts.Select(a => new AccountDto
+                    {
+                        AccountNumber = a.AccountNumber,
+                        Balance = a.Balance
+                    }).ToList();
+
+                    return Ok(accountDtos);
                 }
-
-                // Mapowanie Account na AccountDto jeśli jest taka potrzeba
-                var accountDtos = accounts.Select(a => new AccountDto
+                catch (NotFoundAccount ex)
                 {
-                    AccountNumber = a.AccountNumber,
-                    Balance = a.Balance
-                    // Dodaj inne właściwości, jeśli są w AccountDto
-                }).ToList();
-
-                return Ok(accountDtos);
+                    return BadRequest(new { message = ex.Message });
+                }
             }
-            catch (NotFoundAccount ex)
+            catch (BadTokenException ex)
             {
-                return BadRequest(new { message = ex.Message });
+                return BadRequest(new { message = ex.Message, });
             }
         }
 

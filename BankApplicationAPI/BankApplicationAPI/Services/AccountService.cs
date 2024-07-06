@@ -1,16 +1,18 @@
 ﻿using BankApplicationAPI.Entities;
 using BankApplicationAPI.Exeptions;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Text;
+using System.Text.Json;
 
 namespace BankApplicationAPI.Services
 {
     public interface IAccountService
     {
-        //Added veryfication JWT
-        void CreateAccount(int id);
-        List<Account> GetAccountsByUserId(int id);
+        void CreateAccount(int id, string token);
+        List<Account> GetAccountsByUserId(int id, string token);
+        
     }
     public class AccountService : IAccountService
     {
@@ -23,8 +25,12 @@ namespace BankApplicationAPI.Services
         {
             _dbContext = dbContext;
         }
-        public void CreateAccount(int id)
+        public void CreateAccount(int id, string token)
         {
+            if (!VerificationToken(id, token))
+            {
+                throw new BadTokenException(token);
+            }
             var user = _dbContext.Users.FirstOrDefault(u => u.UserId == id);
             if (user == null)
             {
@@ -60,9 +66,12 @@ namespace BankApplicationAPI.Services
             return sb.ToString();
         }
 
-        public List<Account> GetAccountsByUserId(int userId)
+        public List<Account> GetAccountsByUserId(int userId, string token)
         {
-            // Pobranie wszystkich kont przypisanych do określonego userId
+            if(!VerificationToken(userId, token))
+            {
+                throw new BadTokenException(token);
+            }
             var accounts = _dbContext.Accounts
                                      .Where(a => a.UserId == userId)
                                      .Select(account => new Account
@@ -72,15 +81,71 @@ namespace BankApplicationAPI.Services
                                      })
                                      .ToList();
 
-            // Logowanie lub inna akcja w przypadku pustej listy
             if (accounts.Count == 0)
             {
-                Console.WriteLine($"Nie znaleziono kont dla użytkownika o ID: {userId}");
+                throw new NotFoundAccount("User does not have an account.");
             }
 
             return accounts;
         }
+        private bool VerificationToken(int userId, string token)
+        {
+            var (header, payload) = DecodeToken(token);
+            var (tokenId, email) = ExtractEmailAndId(payload);
 
+            if (!int.TryParse(tokenId, out int tokenUserId))
+            {
+                throw new BadTokenException("Id from the token is not a valid integer.");
+            }
+
+            if (tokenUserId != userId)
+            {
+                throw new BadTokenException("UserId from the token does not match the requested userId.");
+            }
+            return true;
+
+        }
+        private static (string headerDecoded, string payloadDecoded) DecodeToken(string token)
+        {
+            string[] parts = token.Split('.');
+            if (parts.Length != 3)
+            {
+                throw new ArgumentException("Wrong token format.");
+            }
+
+            string headerEncoded = parts[0];
+            string payloadEncoded = parts[1];
+
+            string headerDecoded = Base64UrlDecode(headerEncoded);
+            string payloadDecoded = Base64UrlDecode(payloadEncoded);
+
+            return (headerDecoded, payloadDecoded);
+        }
+
+        private static string Base64UrlDecode(string input)
+        {
+            string output = input.Replace('-', '+').Replace('_', '/');
+            switch (output.Length % 4)
+            {
+                case 2: output += "=="; break;
+                case 3: output += "="; break;
+                case 0: break;
+                default: throw new ArgumentException("Invalid Base64Url string.");
+            }
+
+            byte[] base64Bytes = Convert.FromBase64String(output);
+            return Encoding.UTF8.GetString(base64Bytes);
+        }
+
+        public static (string Id, string Email) ExtractEmailAndId(string payload)
+        {
+            var payloadJson = JsonDocument.Parse(payload);
+
+            string id = payloadJson.RootElement.GetProperty("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier")[0].GetString();
+            string email = payloadJson.RootElement.GetProperty("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier")[1].GetString();
+
+            return (id, email);
+        }
 
     }
 }
