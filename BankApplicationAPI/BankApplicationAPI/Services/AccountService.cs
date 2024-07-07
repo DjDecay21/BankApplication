@@ -11,8 +11,10 @@ namespace BankApplicationAPI.Services
     public interface IAccountService
     {
         void CreateAccount(int id, string token);
-        List<Account> GetAccountsByUserId(int id, string token);
-        
+        List<AccountDto> GetAccountsByUserId(int id, string token);
+        List<TransferDto> GetTransferByAccountNumber(string accountNumber, string token);
+
+
     }
     public class AccountService : IAccountService
     {
@@ -27,7 +29,7 @@ namespace BankApplicationAPI.Services
         }
         public void CreateAccount(int id, string token)
         {
-            if (!VerificationToken(id, token))
+            if (!VerificationTokenById(id, token))
             {
                 throw new BadTokenException(token);
             }
@@ -66,29 +68,51 @@ namespace BankApplicationAPI.Services
             return sb.ToString();
         }
 
-        public List<Account> GetAccountsByUserId(int userId, string token)
+        public List<AccountDto> GetAccountsByUserId(int userId, string token)
         {
-            if(!VerificationToken(userId, token))
+
+            if(!VerificationTokenById(userId, token))
             {
                 throw new BadTokenException(token);
             }
             var accounts = _dbContext.Accounts
                                      .Where(a => a.UserId == userId)
-                                     .Select(account => new Account
+                                     .Select(account => new AccountDto
                                      {
                                          AccountNumber = account.AccountNumber,
                                          Balance = account.Balance
                                      })
                                      .ToList();
-
-            if (accounts.Count == 0)
+            if (accounts.Count == 0 || accounts == null)
             {
                 throw new NotFoundAccount("User does not have an account.");
             }
-
             return accounts;
         }
-        private bool VerificationToken(int userId, string token)
+        public List<TransferDto> GetTransferByAccountNumber(string accountNumber, string token)
+        {
+            if(!VerificationTokenByAccountNumber(accountNumber, token))
+            {
+                throw new BadTokenException(token);
+            }
+            var transfers = _dbContext.Transfers
+                                     .Where(a => a.SourceAccountNumber == accountNumber || a.DestinationAccountNumber==accountNumber)
+                                     .Select(transfers => new TransferDto
+                                     {
+                                         SourceAccountNumber = transfers.SourceAccountNumber,
+                                         DestinationAccountNumber = transfers.DestinationAccountNumber,
+                                         Amount = transfers.Amount,
+                                         Description = transfers.Description,
+                                         TransferDate = transfers.TransferDate
+                                     })
+                                     .ToList();
+            if(transfers.Count == 0 || transfers == null)
+            {
+                throw new NotFoundAccount("Account does not have an transfer.");
+            }
+            return transfers;
+        }
+        private bool VerificationTokenById(int userId, string token)
         {
             var (header, payload) = DecodeToken(token);
             var (tokenId, email) = ExtractEmailAndId(payload);
@@ -99,6 +123,26 @@ namespace BankApplicationAPI.Services
             }
 
             if (tokenUserId != userId)
+            {
+                throw new BadTokenException("UserId from the token does not match the requested userId.");
+            }
+            return true;
+
+        }
+        private bool VerificationTokenByAccountNumber(string numberAccount, string token)
+        {
+            var checker = _dbContext.Accounts.Where(a => a.AccountNumber == numberAccount)
+                .FirstOrDefault();
+
+            var (header, payload) = DecodeToken(token);
+            var (tokenId, email) = ExtractEmailAndId(payload);
+
+            if (!int.TryParse(tokenId, out int tokenUserId))
+            {
+                throw new BadTokenException("Id from the token is not a valid integer.");
+            }
+
+            if (checker.UserId != tokenUserId)
             {
                 throw new BadTokenException("UserId from the token does not match the requested userId.");
             }
@@ -146,6 +190,8 @@ namespace BankApplicationAPI.Services
 
             return (id, email);
         }
+
+
 
     }
 }

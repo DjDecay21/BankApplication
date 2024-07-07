@@ -42,38 +42,44 @@ namespace BankApplicationAPI.Controllers
             
         }
         [HttpGet("showAccounts/{id}")]
-        public ActionResult<List<AccountDto>> Get([FromRoute] int id)
+        public ActionResult<List<AccountDto>> ShowUserAccounts(int id)
         {
             string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
-            try
-            {
                 try
                 {
                     var accounts = _accountService.GetAccountsByUserId(id, token);
-
-                    if (accounts == null || accounts.Count == 0)
-                    {
-                        return NotFound(new { message = $"The user is not found with {id} id." });
-                    }
-
-                    var accountDtos = accounts.Select(a => new AccountDto
-                    {
-                        AccountNumber = a.AccountNumber,
-                        Balance = a.Balance
-                    }).ToList();
-
-                    return Ok(accountDtos);
+                    return Ok(accounts);
                 }
                 catch (NotFoundAccount ex)
                 {
                     return BadRequest(new { message = ex.Message });
                 }
-            }
-            catch (BadTokenException ex)
-            {
-                return BadRequest(new { message = ex.Message, });
-            }
         }
 
+        [HttpGet("transfer")]
+        public ActionResult<List<TransferDto>> ShowAcountTransfer(string numberAccount)
+        {
+            string token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            try
+            {   
+                var transfers = _accountService.GetTransferByAccountNumber(numberAccount, token);
+
+                if (transfers == null || transfers.Count == 0)
+                {
+                    return NotFound(new { message = "Account has no transactions " });
+                }
+                return Ok(transfers);
+            }
+
+            
+            catch (NotFoundAccount ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+
+        }
     }
+
 }
+
+
